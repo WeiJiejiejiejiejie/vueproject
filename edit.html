@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="news-content"></div>
+
+
+<script src="https://cdn.bootcss.com/wangEditor/10.0.13/wangEditor.js"></script>
+<script>
+
+    let E = window.wangEditor;
+    window.editor = new E('#news-content');
+    window.editor.create();
+    window.onload = function () {
+        window.editor.txt.html('<div id="editor">\n' +
+            '        <p>欢迎使用 <b>wangEditor</b> 富文本编辑器</p>\n' +
+            '    </div>');
+    }
+</script>
+</body>
+</html>
